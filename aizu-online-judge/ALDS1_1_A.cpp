@@ -5,8 +5,12 @@ using namespace std;
 
 void output(int N, int A[]) {
     for ( int k = 0; k < N; k++){
+        if ( k < N - 1 ) {
             printf("%d ", A[k]);
+        } else {
+            printf("%d", A[k]);
         }
+    }
     printf("\n");
 }
 
