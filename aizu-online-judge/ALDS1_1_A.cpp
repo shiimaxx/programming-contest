@@ -14,16 +14,8 @@ void output(int N, int A[]) {
     printf("\n");
 }
 
-
-int main() {
-    int N, i, j, v;
-    cin >> N;
-    int A[N];
-
-    for ( i = 0; i < N; i++ ) cin >> A[i];
-
-    output(N, A);
-
+void insert_sort(int N, int A[]) {
+    int i, j, v;
     for ( i = 1; i < N ; i++) {
         v = A[i];
         j = i - 1;
@@ -34,4 +26,15 @@ int main() {
         A[j + 1] = v;
         output(N, A);
     }
+}
+
+int main() {
+    int N, i, j, v;
+    cin >> N;
+    int A[N];
+
+    for ( i = 0; i < N; i++ ) cin >> A[i];
+
+    output(N, A);
+    insert_sort(N, A);
 }
