@@ -32,7 +32,7 @@ void bubble_sort(int N, int A[]){
         i++;
     }
 
-	output(N, A);
+    output(N, A);
     cout << count << endl;
 
     return;
