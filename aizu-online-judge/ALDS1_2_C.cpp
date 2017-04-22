@@ -3,7 +3,7 @@
 using namespace std;
 
 void output(int N, string A[]) {
-for ( int i = 0; i < N; i++ ) {
+    for ( int i = 0; i < N; i++ ) {
         if (i) cout << " ";
         cout << A[i];
     }
