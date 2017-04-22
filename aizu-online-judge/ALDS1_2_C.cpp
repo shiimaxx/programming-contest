@@ -2,6 +2,14 @@
 #include <string>
 using namespace std;
 
+void output(int N, string A[]) {
+for ( int i = 0; i < N; i++ ) {
+        if (i) cout << " ";
+        cout << A[i];
+    }
+    cout << endl;
+}
+
 void bubbleSort(int N, string A1[]) {
     string v;
 
@@ -14,11 +22,7 @@ void bubbleSort(int N, string A1[]) {
             }
         }
     }
-    for ( int i = 0; i < N; i++ ) {
-        if (i) cout << " ";
-        cout << A1[i];
-    }
-	cout << endl;
+    output(N, A1);
 }
 
 void selectionSort(int N, string A2[]) {
@@ -35,11 +39,7 @@ void selectionSort(int N, string A2[]) {
         A2[minj] = A2[i];
         A2[i] = v;
 	}
-    for ( int i = 0; i < N; i++ ) {
-        if (i) cout << " ";
-        cout << A2[i];
-    }
-	cout << endl;
+    output(N, A2);
 }
 
 int main() {
